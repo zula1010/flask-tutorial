@@ -1,0 +1,107 @@
+2019-10-02 12:12:42,677 INFO: Microblog startup [in /mnt/nfs/home/zula/projects/flask-tutorial/app/__init__.py:44]
+2019-10-02 12:30:52,070 INFO: Microblog startup [in /mnt/nfs/home/zula/projects/flask-tutorial/app/__init__.py:44]
+2019-10-02 13:20:12,993 INFO: Microblog startup [in /mnt/nfs/home/zula/projects/flask-tutorial/app/__init__.py:44]
+2019-10-02 13:26:10,860 INFO: Microblog startup [in /mnt/nfs/home/zula/projects/flask-tutorial/app/__init__.py:44]
+2019-10-02 13:34:58,212 INFO: Microblog startup [in /mnt/nfs/home/zula/projects/flask-tutorial/app/__init__.py:44]
+2019-10-02 13:37:43,537 INFO: Microblog startup [in /mnt/nfs/home/zula/projects/flask-tutorial/app/__init__.py:44]
+2019-10-02 13:37:54,384 ERROR: Exception on /reset_password_request [POST] [in /mnt/nfs/home/zula/projects/flask-tutorial/venv/lib64/python3.6/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/mnt/nfs/home/zula/projects/flask-tutorial/venv/lib64/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/mnt/nfs/home/zula/projects/flask-tutorial/venv/lib64/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/mnt/nfs/home/zula/projects/flask-tutorial/venv/lib64/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/mnt/nfs/home/zula/projects/flask-tutorial/venv/lib64/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/mnt/nfs/home/zula/projects/flask-tutorial/venv/lib64/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/mnt/nfs/home/zula/projects/flask-tutorial/venv/lib64/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/mnt/nfs/home/zula/projects/flask-tutorial/app/routes.py", line 168, in reset_password_request
+    send_password_reset_email(user)
+  File "/mnt/nfs/home/zula/projects/flask-tutorial/app/email.py", line 23, in send_password_reset_email
+    user=user, token=token))
+  File "/mnt/nfs/home/zula/projects/flask-tutorial/app/email.py", line 11, in send_email
+    mail.send(msg)
+  File "/mnt/nfs/home/zula/projects/flask-tutorial/venv/lib64/python3.6/site-packages/flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "/mnt/nfs/home/zula/projects/flask-tutorial/venv/lib64/python3.6/site-packages/flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "/mnt/nfs/home/zula/projects/flask-tutorial/venv/lib64/python3.6/site-packages/flask_mail.py", line 165, in configure_host
+    host.login(self.mail.username, self.mail.password)
+  File "/usr/lib64/python3.6/smtplib.py", line 730, in login
+    raise last_exception
+  File "/usr/lib64/python3.6/smtplib.py", line 721, in login
+    initial_response_ok=initial_response_ok)
+  File "/usr/lib64/python3.6/smtplib.py", line 642, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. Learn more at\n5.7.8  https://support.google.com/mail/?p=BadCredentials g20sm317084pfo.73 - gsmtp')
+2019-10-02 13:38:49,931 INFO: Microblog startup [in /mnt/nfs/home/zula/projects/flask-tutorial/app/__init__.py:44]
+2019-10-02 13:39:07,907 ERROR: Exception on /reset_password_request [POST] [in /mnt/nfs/home/zula/projects/flask-tutorial/venv/lib64/python3.6/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/mnt/nfs/home/zula/projects/flask-tutorial/venv/lib64/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/mnt/nfs/home/zula/projects/flask-tutorial/venv/lib64/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/mnt/nfs/home/zula/projects/flask-tutorial/venv/lib64/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/mnt/nfs/home/zula/projects/flask-tutorial/venv/lib64/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/mnt/nfs/home/zula/projects/flask-tutorial/venv/lib64/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/mnt/nfs/home/zula/projects/flask-tutorial/venv/lib64/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/mnt/nfs/home/zula/projects/flask-tutorial/app/routes.py", line 168, in reset_password_request
+    send_password_reset_email(user)
+  File "/mnt/nfs/home/zula/projects/flask-tutorial/app/email.py", line 23, in send_password_reset_email
+    user=user, token=token))
+  File "/mnt/nfs/home/zula/projects/flask-tutorial/app/email.py", line 11, in send_email
+    mail.send(msg)
+  File "/mnt/nfs/home/zula/projects/flask-tutorial/venv/lib64/python3.6/site-packages/flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "/mnt/nfs/home/zula/projects/flask-tutorial/venv/lib64/python3.6/site-packages/flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "/mnt/nfs/home/zula/projects/flask-tutorial/venv/lib64/python3.6/site-packages/flask_mail.py", line 158, in configure_host
+    host = smtplib.SMTP(self.mail.server, self.mail.port)
+  File "/usr/lib64/python3.6/smtplib.py", line 251, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/lib64/python3.6/smtplib.py", line 338, in connect
+    (code, msg) = self.getreply()
+  File "/usr/lib64/python3.6/smtplib.py", line 394, in getreply
+    raise SMTPServerDisconnected("Connection unexpectedly closed")
+smtplib.SMTPServerDisconnected: Connection unexpectedly closed
+2019-10-02 13:43:18,159 ERROR: Exception on /reset_password_request [POST] [in /mnt/nfs/home/zula/projects/flask-tutorial/venv/lib64/python3.6/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/mnt/nfs/home/zula/projects/flask-tutorial/venv/lib64/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/mnt/nfs/home/zula/projects/flask-tutorial/venv/lib64/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/mnt/nfs/home/zula/projects/flask-tutorial/venv/lib64/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/mnt/nfs/home/zula/projects/flask-tutorial/venv/lib64/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/mnt/nfs/home/zula/projects/flask-tutorial/venv/lib64/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/mnt/nfs/home/zula/projects/flask-tutorial/venv/lib64/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/mnt/nfs/home/zula/projects/flask-tutorial/app/routes.py", line 168, in reset_password_request
+    send_password_reset_email(user)
+  File "/mnt/nfs/home/zula/projects/flask-tutorial/app/email.py", line 23, in send_password_reset_email
+    user=user, token=token))
+  File "/mnt/nfs/home/zula/projects/flask-tutorial/app/email.py", line 11, in send_email
+    mail.send(msg)
+  File "/mnt/nfs/home/zula/projects/flask-tutorial/venv/lib64/python3.6/site-packages/flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "/mnt/nfs/home/zula/projects/flask-tutorial/venv/lib64/python3.6/site-packages/flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "/mnt/nfs/home/zula/projects/flask-tutorial/venv/lib64/python3.6/site-packages/flask_mail.py", line 158, in configure_host
+    host = smtplib.SMTP(self.mail.server, self.mail.port)
+  File "/usr/lib64/python3.6/smtplib.py", line 251, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/lib64/python3.6/smtplib.py", line 338, in connect
+    (code, msg) = self.getreply()
+  File "/usr/lib64/python3.6/smtplib.py", line 394, in getreply
+    raise SMTPServerDisconnected("Connection unexpectedly closed")
+smtplib.SMTPServerDisconnected: Connection unexpectedly closed
+2019-10-02 13:49:40,297 INFO: Microblog startup [in /mnt/nfs/home/zula/projects/flask-tutorial/app/__init__.py:44]
