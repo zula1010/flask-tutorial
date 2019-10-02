@@ -19,3 +19,4 @@ class Config(object):
     MAIL_PASSWORD = 'Larry0701'
     ADMINS = ['munkhzulk@gmail.com']
     POSTS_PER_PAGE = 4
+    LANGUAGES = ['en', 'es']
